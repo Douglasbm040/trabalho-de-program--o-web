@@ -1,0 +1,27 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    
+    margin: 0;
+    background-color: #000;
+}
+h3{
+    color: red;
+    position: relative;
+    top: 10px;
+    left: 50px;
+
+    
+}
+
+p{
+    color: white;
+    position: relative;
+    left: 150px ;
+    
+}
+img{
+    float: left;
+}
