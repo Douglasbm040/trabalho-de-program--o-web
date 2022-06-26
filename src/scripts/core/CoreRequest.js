@@ -6,7 +6,7 @@ export function get(url) {
   return request.responseText;
 }
 
-export function main() {
+export function catalog() {
   let data = get(
     "https://api.themoviedb.org/3/movie/popular?api_key=efc27e063cff19aefee686a5f6062149"
   );
@@ -19,8 +19,8 @@ export function seach(movie) {
   let requestmovie = get(
     "https://api.themoviedb.org/3/search/movie?api_key=efc27e063cff19aefee686a5f6062149&language=en-US&query="+movie+"&page=1&include_adult=false"
   );
-  movie = JSON.parse(requestmovie);
-  return movie;
+  let getmovie = JSON.parse(requestmovie);
+  return  getmovie;
 }
 
 

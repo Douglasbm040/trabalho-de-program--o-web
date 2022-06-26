@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
     <link rel="stylesheet" href="\src\styles\css\home.css" />
-  
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,37 +11,32 @@
   </head>
   <body>
     <div id="seach">
-      <form method="get">
-        seach
-        <input type="text" id="seachmovie">
-        <input type="submit" value="ok" id="bnt_submit">
-      </form>
+      seach
+      <input type="text" id="seachmovie" />
+      <input type="submit" value="ok" id="bnt_submit" onclick="enviar()" />
+      <script typer="text/javascript">
+        function enviar(params) {
+          valor = document.getElementById("seachmovie").value;
+          window.location = "movies.html?movies=" + valor;
+        }
+      </script>
     </div>
     <div id="carrossel">
       <h1>filmes populares</h1>
-        <div id="conteiner">
-          <div id="card-1"><img  class="item" id="cartaz-1"  src="..." ></div>
-          <div id="card-2"><img  class="item" id="cartaz-2"  src="..." ></div>
-          <div id="card-3"><img  class="item" id="cartaz-3"  src="..." ></div>
-          <div id="card-4"><img  class="item" id="cartaz-4"  src="..." ></div>
-          <div id="card-5"><img  class="item" id="cartaz-5"  src="..." ></div>
-          <div id="card-6"><img  class="item" id="cartaz-6"  src="..." ></div>
-          <div id="card-7"><img  class="item" id="cartaz-7"  src="..." ></div>
-          <div id="card-8"><img  class="item" id="cartaz-8"  src="..." ></div>
-          <div id="card-9"><img  class="item" id="cartaz-9"  src="..." ></div>
-          <div id="card-10"><img class="item" id="cartaz-10" src="..." ></div>
-        </div>
-          
-        
-            
-        
-
+      <div id="conteiner">
+        <div id="card-1"><img class="item" id="cartaz-1" src="..." /></div>
+        <div id="card-2"><img class="item" id="cartaz-2" src="..." /></div>
+        <div id="card-3"><img class="item" id="cartaz-3" src="..." /></div>
+        <div id="card-4"><img class="item" id="cartaz-4" src="..." /></div>
+        <div id="card-5"><img class="item" id="cartaz-5" src="..." /></div>
+        <div id="card-6"><img class="item" id="cartaz-6" src="..." /></div>
+        <div id="card-7"><img class="item" id="cartaz-7" src="..." /></div>
+        <div id="card-8"><img class="item" id="cartaz-8" src="..." /></div>
+        <div id="card-9"><img class="item" id="cartaz-9" src="..." /></div>
+        <div id="card-10"><img class="item" id="cartaz-10" src="..." /></div>
+      </div>
     </div>
-    
-    
-    
-    
-    
+
     <!--ul class="slider">
         
       <li>
@@ -73,7 +67,6 @@
       </li>
       
     </ul-->
-    
 
     <script
       type="module"

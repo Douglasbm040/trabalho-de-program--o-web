@@ -1,7 +1,6 @@
-import { get } from "/src/scripts/core/CoreRequest.js";
-import { main } from "/src/scripts/core/CoreRequest.js";
+import { catalog } from "/src/scripts/core/CoreRequest.js";
 
-var data = main();
+var data = catalog();
 
 
  
@@ -39,7 +38,17 @@ function createpage(ordem,id) {
  page8;
  page9;
  page10;
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
  

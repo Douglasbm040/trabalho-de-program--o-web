@@ -5,7 +5,7 @@ html{
 body{
     
     margin: 0;
-    background-color: #000;
+    background-color: black;
 }
 h3{
     color: red;
@@ -20,8 +20,14 @@ p{
     color: white;
     position: relative;
     left: 150px ;
+    text-align: justify;
     
 }
 img{
     float: left;
+    width: 150px;
+    height: 250px;
+}
+#sinopse{
+    width: 100;
 }
