@@ -1,48 +1,58 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-    margin: 0;
-    background-color: #000;
+body {
+  margin: 0;
+  background-image: linear-gradient( white,silver,grey,black);
+}
+#seach {
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 
-#seach{
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    color: white;
+#carrossel {
+    margin-bottom: 100px;
+    margin-top: 100px;
+  display: grid;
+  overflow: hidden;
+  scroll-behavior: smooth;
+
+ 
 }
 
-#carrossel{
-    display: grid;
-    overflow: hidden;
-    scroll-behavior: smooth;
+h1 {
+  color: white;
+}
+#carrossel #conteiner {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+  margin: 20px 0;
 }
 
-h1{
-    color: white ;
-}
-#carrossel #conteiner{
-    width: 100%;
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(10 ,auto);
-    margin: 20px 0;
-
-
+.imageposter {
+  width: 150px;
+  height: 250px;
+  margin-left: 5px;
+  padding: 0 2px;
+  transition: 20ms all;
 }
 
-
-.item{
-    width: 150px;
-    height: 250px;
-    margin-left: 5px;
-    padding: 0 2px;
-    transition: 20ms all;
+.item:hover {
+  margin: 0 40px;
+  transform: scale(1.2);
 }
+.logo {
+  width: auto;
+  height: 5%;
+  position: relative;
+  bottom: 10px;
+  left: 40px;
+  border-radius: 5px;
+  background: #e0e0e0;
 
-.item:hover{
-    margin: 0 40px;
-    transform: scale(1.2);
+
 }
