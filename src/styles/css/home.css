@@ -4,7 +4,7 @@ html {
 
 body {
   margin: 0;
-  background-image: linear-gradient( rgba(255, 255, 255, 0.705),silver,silver,silver,silver,grey,black);
+  background-color: black;
 }
 #seach {
   position: absolute;
@@ -18,7 +18,7 @@ body {
     display: grid;
     overflow: hidden;
     scroll-behavior: smooth;
-    overflow: scroll;
+    
 
 
  
@@ -26,15 +26,17 @@ body {
 body::-webkit-scrollbar{
   display: none;
 }
-#carrossel::-webkit-scrollbar{
+
+
+#conteiner::-webkit-scrollbar{
   display: none;
 }
 
 h1 {
   color: white;
 }
-#carrossel #conteiner {
-  
+#conteiner {
+  overflow: scroll;
   width: 100%;
   position: relative;
   display: grid;
@@ -43,8 +45,8 @@ h1 {
 }
 
 .imageposter {
-  width: 150px;
-  height: 250px;
+  width: auto;
+  height: 300px;
   margin-left: 5px;
   padding: 0 2px;
   transition: 20ms all;
