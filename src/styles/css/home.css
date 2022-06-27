@@ -4,7 +4,7 @@ html {
 
 body {
   margin: 0;
-  background-image: linear-gradient( white,silver,grey,black);
+  background-image: linear-gradient( rgba(255, 255, 255, 0.705),silver,silver,silver,silver,grey,black);
 }
 #seach {
   position: absolute;
@@ -15,18 +15,26 @@ body {
 #carrossel {
     margin-bottom: 100px;
     margin-top: 100px;
-  display: grid;
-  overflow: hidden;
-  scroll-behavior: smooth;
+    display: grid;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    overflow: scroll;
+
 
  
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+#carrossel::-webkit-scrollbar{
+  display: none;
 }
 
 h1 {
   color: white;
 }
 #carrossel #conteiner {
-  overflow: scroll;
+  
   width: 100%;
   position: relative;
   display: grid;
