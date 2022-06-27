@@ -26,6 +26,7 @@ h1 {
   color: white;
 }
 #carrossel #conteiner {
+  overflow: scroll;
   width: 100%;
   position: relative;
   display: grid;

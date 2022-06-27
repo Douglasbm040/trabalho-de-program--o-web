@@ -12,7 +12,7 @@ function enviar(params) {
 
  
 
-function factorycarousel(ordem,id,data,idlink) {
+export function factorycarousel(ordem,id,data,idlink) {
     let title = data["results"][ordem]["original_title"] 
 
     return{
